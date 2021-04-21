@@ -1,0 +1,41 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package embasa.fcom.entity;
+
+/**
+ *
+ * @author Bruno
+ */
+public enum Functionality {
+    
+    IQM("iqm", "./sql/iqm.sql"),
+    AVAL_SERV("avalServ", "./sql/avalServ.sql"),
+    IMT("imt", "./sql/imt.sql");
+    
+    private String name;
+    private String nameFileSQL;
+
+    private Functionality(String name, String nameFileSQL) {
+        this.name = name;
+        this.nameFileSQL = nameFileSQL;
+    }
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @return the nameFileSQL
+     */
+    public String getNameFileSQL() {
+        return nameFileSQL;
+    }
+    
+    
+}

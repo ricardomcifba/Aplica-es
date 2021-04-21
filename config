@@ -1,0 +1,10 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "app"]
+	url = https://github.com/ricardomcifba/Aplicacoes.git
+	fetch = +refs/heads/*:refs/remotes/app/*
+	tagopt = --tags
